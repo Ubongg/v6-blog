@@ -4,10 +4,16 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+
+// layouts
 import RootLayout from "./layouts/RootLayout";
+
+// pages
 import BlogDetails, { BlogDetailsLoader } from "./Pages/BlogDetails";
 import Create, { createAction } from "./Pages/Create";
 import Home, { BlogsLoader } from "./Pages/Home";
+
+// components
 import BlogsError from "./components/BlogsError";
 
 const router = createBrowserRouter(
